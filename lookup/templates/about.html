@@ -7,4 +7,19 @@
 
 <h4>Ive made about 1 million django projects and youd think id have this figured out by now</h4>
 
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="jumbotron">
+  <h1 class="display-4">Air Quality: {{api.1.AQI}} {{api.1.Category.Name}} </h1>
+  <p class="lead">{{api.1.ReportingArea}}</p>
+    </div>
+
+    <div class="carousel-item">
+      {% url 'home' %}
+    </div>
+  </div>
+
 {% endblock %}
